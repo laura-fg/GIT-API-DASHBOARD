@@ -22,7 +22,7 @@ return(
         
                  
                  <ButtonSair type="button" onClick={() => setToken(null)}>
-                 <i class="fas fa-sign-out-alt" style={{ color:'#ffff', width:'25px', marginRight:'25px'}}></i> Sair
+                 <i class="fas fa-sign-out-alt" style={{ color:'#ffff', width:'25px', marginRight:'10px', marginTop:'5px'}}></i>SAIR
                 </ButtonSair>
       
   

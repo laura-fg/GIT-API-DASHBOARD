@@ -9,19 +9,18 @@ function handleSearch(){
     axios.get(`https://api.github.com/users/${usuario}/repos`).then(response => console.log(response.data));
 }
 return(
-<div>
+
 <div className="repo-container">
     <div className="div-search">
-    <h1> Pesquisar: </h1>
-   <h2>{usuario}</h2>
+    <h1> PESQUISAR: </h1>
    </div>
 
-   <div>
+ <div className="div-pesquisa">
    <input type="text" placeholder="Usuário" value={usuario} onChange={e => setUsuario(e.target.value)}/>
-   <button onClick={handleSearch}> Pesquisar</button>
-   </div>
+   <button onClick={handleSearch}> OK</button>
+ </div>
 </div>
-</div>
+
 );
 
 };

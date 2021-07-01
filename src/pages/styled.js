@@ -17,8 +17,8 @@ border: 0px solid transparent;
 cursor:pointer;
 
  &:hover{
-     margin-top: 10px;
-     border-left: 5px solid #ffffff;
+     margin-bottom: 10px;
+     border-bottom: 4px solid #ffffff;
       
   
  }
