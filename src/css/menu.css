@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.sidebar{
+    position: fixed;
+    width: 240px;
+    left: -240px;
+    height:100%;
+    background: #5988df;
+    transition:all .5s ease;
+}
+.sidebar header{
+    font-size: 26px;
+    color: white;
+    line-height:70px;
+    text-align:center;
+    background-color:1c1c1c;
+    user-select:none;
+
+
+}
+
+ .sidebar .style-nav{
+    display:block;
+    height:65px;
+    line-height:65px;
+    width:100%;
+    color: white;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #5988df;
+    border-left: 1px solid transparent;
+    border-top: 1px solid rgba(255,255,255,.05);
+    transition:all .3s ease;
+
+    
+}
+
+
+
+#check{
+    display:none;
+}
+
+ #btn,#cancel{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    border-radius:5px;
+    border: 1px solid #5988df;
+    margin: 15px 30px;
+    font-size:28px;
+    background-color:#5988df;
+    height:45px;
+    width: 45px;
+    text-align: center;
+    line-height:45px;
+    transition: all .5s ease;
+
+}
+
+label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+  margin-left:245px;
+opacity: 0;
+visibility: hidden;
+
+}
+
+#check:checked ~ label #cancel{
+  margin-left:245px;
+  opacity: 1;
+  visibility: visible;
+  
+  }
+@media(max-width: 860px) {
+    .sidebar{
+        height:auto;
+        width:70px;
+        left: 0;
+        margin: 100px 0;
+        
+    }
+    header, #btn, #cancel{
+        display:none;
+    }
+
+   
+    .sidebar{
+ height: 60px;
+ 
+    }
+
+          
+}
+
+p{
+    border-bottom: 2px solid #ffffff;
+    font-size: 20px;
+    font-weight:600;
+
+}
