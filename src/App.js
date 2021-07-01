@@ -1,29 +1,23 @@
-
-import axios from 'axios';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './css/menu.css';
+import logo from './logo.svg';
 import './App.css';
-import { NavLink, Router } from 'react-router-dom';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-
-import { createBrowserHistory } from "history";
-import Menu from './pages/menu';
-import Login from './pages/Login/login';
-
-const customHistory = createBrowserHistory();
-
-
 
 function App() {
-
-
   return (
     <div className="App">
-      <Menu/>
-      <Login/>
-     
-          
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
